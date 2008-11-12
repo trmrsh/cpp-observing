@@ -1,0 +1,51 @@
+#
+# File of star data.
+# 
+# File format consists of a name followed by a line of positional information.
+# Different stars should be separated from each other.
+#
+# # is recognised as a comment.
+
+Z Cha
+08 07 28.2 -76 32 01 2000
+40264.18070 0.074499304
+    0.00004 0.000000005
+
+OY Car
+10 06 22.43 -70 14 04.9 2000
+43993.053958 0.063120918
+    0.000006 0.000000002
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

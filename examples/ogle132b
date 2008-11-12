@@ -1,0 +1,49 @@
+#
+# File of star data.
+# 
+# File format consists of a name followed by a line of positional information.
+# Different stars should be separated from each other.
+#
+# # is recognised as a comment.
+
+OGLE 132b
+10 50 34.7 -61 57 26.0 2000
+53142.0888 1.689857
+    0.0001 0.000001
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

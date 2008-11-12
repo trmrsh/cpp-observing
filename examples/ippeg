@@ -1,0 +1,52 @@
+#
+# File of star data.
+# 
+# File format consists of a name followed by a line of positional information.
+# Different stars should be separated from each other.
+#
+# # is recognised as a comment.
+
+
+IP Peg              
+23 23 08.7 +18 24 59.
+HJD linear 2445615.4156 0.0004 0.15820616 0.00000004
+
+HT Cas
+01 10 13.2 +60 04 36.
+BMJD linear 43727.43723 0.00001 0.0736472070 0.0000000001
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

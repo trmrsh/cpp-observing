@@ -1,0 +1,49 @@
+#
+# File of star data.
+# 
+# File format consists of a name followed by a line of positional information.
+# Different stars should be separated from each other.
+#
+# # is recognised as a comment.
+
+SDSS J0926+3624
+09 26 38.790 +36 24 02.08 2000
+53795.945526 0.0196608
+    0.000005 0.0000001
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

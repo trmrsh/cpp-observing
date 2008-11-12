@@ -1,0 +1,47 @@
+#
+# File of star data.
+# 
+# File format consists of a name followed by a line of positional information.
+# Different stars should be separated from each other.
+#
+# # is recognised as a comment.
+
+UU Aqr
+22 09 05.76 -03 46 17.7 2000
+46346.76657 0.163580429
+    0.00001 0.000000001
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+Making all in src
+make[1]: Entering directory `/home/phsaap/code/C++/observing/src'
+make[2]: Entering directory `/home/phsaap/code/C++/observing'
+make[2]: Leaving directory `/home/phsaap/code/C++/observing'
+if g++ -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE=\"observing\" -DVERSION=\"1.0.0\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_MATH_H=1  -I. -I. -I../include  -I/opt/include -I/home/phsaap/software/include  -Wall -g -O3 -MT when_visible.o -MD -MP -MF ".deps/when_visible.Tpo" -c -o when_visible.o when_visible.cc; \
+then mv -f ".deps/when_visible.Tpo" ".deps/when_visible.Po"; else rm -f ".deps/when_visible.Tpo"; exit 1; fi
+if g++ -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE=\"observing\" -DVERSION=\"1.0.0\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_MATH_H=1  -I. -I. -I../include  -I/opt/include -I/home/phsaap/software/include  -Wall -g -O3 -MT suntime.o -MD -MP -MF ".deps/suntime.Tpo" -c -o suntime.o suntime.cc; \
+then mv -f ".deps/suntime.Tpo" ".deps/suntime.Po"; else rm -f ".deps/suntime.Tpo"; exit 1; fi
+if g++ -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE=\"observing\" -DVERSION=\"1.0.0\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_MATH_H=1  -I. -I. -I../include  -I/opt/include -I/home/phsaap/software/include  -Wall -g -O3 -MT startime.o -MD -MP -MF ".deps/startime.Tpo" -c -o startime.o startime.cc; \
+then mv -f ".deps/startime.Tpo" ".deps/startime.Po"; else rm -f ".deps/startime.Tpo"; exit 1; fi
+rm -f libobserving.a
+ar cru libobserving.a when_visible.o suntime.o startime.o 
+ranlib libobserving.a
+if g++ -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE=\"observing\" -DVERSION=\"1.0.0\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_MATH_H=1  -I. -I. -I../include  -I/opt/include -I/home/phsaap/software/include  -Wall -g -O3 -MT airmass.o -MD -MP -MF ".deps/airmass.Tpo" -c -o airmass.o airmass.cc; \
+then mv -f ".deps/airmass.Tpo" ".deps/airmass.Po"; else rm -f ".deps/airmass.Tpo"; exit 1; fi
+g77  -Wall -g -O3  -L/opt/lib -L/home/phsaap/software/lib -o airmass  airmass.o suntime.o -lsubs -lcsla -lcpgplot -lpgplot -L/usr/X11R6/lib -lX11 -lpng -lz -L/usr/lib/gcc/i586-mandrake-linux-gnu/3.4.1/ -lstdc++ 
+if g++ -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE=\"observing\" -DVERSION=\"1.0.0\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_MATH_H=1  -I. -I. -I../include  -I/opt/include -I/home/phsaap/software/include  -Wall -g -O3 -MT eclipsers.o -MD -MP -MF ".deps/eclipsers.Tpo" -c -o eclipsers.o eclipsers.cc; \
+then mv -f ".deps/eclipsers.Tpo" ".deps/eclipsers.Po"; else rm -f ".deps/eclipsers.Tpo"; exit 1; fi
+g77  -Wall -g -O3  -L/opt/lib -L/home/phsaap/software/lib -o eclipsers  eclipsers.o suntime.o when_visible.o startime.o -lsubs -lcsla -lcpgplot -lpgplot -L/usr/X11R6/lib -lX11 -lpng -lz -L/usr/lib/gcc/i586-mandrake-linux-gnu/3.4.1/ -lstdc++ 
+if g++ -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE=\"observing\" -DVERSION=\"1.0.0\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_MATH_H=1  -I. -I. -I../include  -I/opt/include -I/home/phsaap/software/include  -Wall -g -O3 -MT ephemeris.o -MD -MP -MF ".deps/ephemeris.Tpo" -c -o ephemeris.o ephemeris.cc; \
+then mv -f ".deps/ephemeris.Tpo" ".deps/ephemeris.Po"; else rm -f ".deps/ephemeris.Tpo"; exit 1; fi
+ephemeris.cc: In function `int main(int, char**)':
+ephemeris.cc:136: warning: unused variable 'ltravel'
+g77  -Wall -g -O3  -L/opt/lib -L/home/phsaap/software/lib -o ephemeris  ephemeris.o suntime.o -lsubs -lcsla -lcpgplot -lpgplot -L/usr/X11R6/lib -lX11 -lpng -lz -L/usr/lib/gcc/i586-mandrake-linux-gnu/3.4.1/ -lstdc++ 
+if g++ -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE=\"observing\" -DVERSION=\"1.0.0\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_MATH_H=1  -I. -I. -I../include  -I/opt/include -I/home/phsaap/software/include  -Wall -g -O3 -MT starinfo.o -MD -MP -MF ".deps/starinfo.Tpo" -c -o starinfo.o starinfo.cc; \
+then mv -f ".deps/starinfo.Tpo" ".deps/starinfo.Po"; else rm -f ".deps/starinfo.Tpo"; exit 1; fi
+starinfo.cc: In function `int main(int, char**)':
+starinfo.cc:126: warning: unused variable 'ltravel'
+g77  -Wall -g -O3  -L/opt/lib -L/home/phsaap/software/lib -o starinfo  starinfo.o -lsubs -lcsla -lcpgplot -lpgplot -L/usr/X11R6/lib -lX11 -lpng -lz -L/usr/lib/gcc/i586-mandrake-linux-gnu/3.4.1/ -lstdc++ 
+if g++ -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE=\"observing\" -DVERSION=\"1.0.0\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_MATH_H=1  -I. -I. -I../include  -I/opt/include -I/home/phsaap/software/include  -Wall -g -O3 -MT whatphases.o -MD -MP -MF ".deps/whatphases.Tpo" -c -o whatphases.o whatphases.cc; \
+then mv -f ".deps/whatphases.Tpo" ".deps/whatphases.Po"; else rm -f ".deps/whatphases.Tpo"; exit 1; fi
+whatphases.cc: In function `int main(int, char**)':
+whatphases.cc:115: warning: 'plotline' might be used uninitialized in this function
+whatphases.cc:115: warning: 'poor' might be used uninitialized in this function
+g77  -Wall -g -O3  -L/opt/lib -L/home/phsaap/software/lib -o whatphases  whatphases.o -lsubs -lcsla -lcpgplot -lpgplot -L/usr/X11R6/lib -lX11 -lpng -lz -L/usr/lib/gcc/i586-mandrake-linux-gnu/3.4.1/ -lstdc++ 
+make[1]: Leaving directory `/home/phsaap/code/C++/observing/src'
+Making all in include
+make[1]: Entering directory `/home/phsaap/code/C++/observing/include'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/home/phsaap/code/C++/observing/include'
+Making all in doc
+make[1]: Entering directory `/home/phsaap/code/C++/observing/doc'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/home/phsaap/code/C++/observing/doc'
+make[1]: Entering directory `/home/phsaap/code/C++/observing'
+make[1]: Leaving directory `/home/phsaap/code/C++/observing'

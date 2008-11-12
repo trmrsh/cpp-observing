@@ -1,0 +1,48 @@
+#
+# File of star data.
+# 
+# File format consists of a name followed by a line of positional information.
+# Different stars should be separated from each other.
+#
+# # is recognised as a comment.
+
+HU Aqr
+21 07 58.29 -05 17 39.4 2000
+HMJD linear 49216.845162 0.08682041520
+    0.000027 0.00000000082
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
