@@ -1,9 +1,7 @@
 
-The 'observing' software is a small set of programs of use during astronomical
-observing. Most useful perhaps are programs which keep track of orbital phase coverage
-('whatphases') and which print out phase, airmass, parallactic angle for
-a group of objects. I use these extensively while observing.
+'observing' provides a small set of programs of use during astronomical
+observing. 
 
-I hope you enjoy them!
+Installation order: subs --> observing
 
-TRM 19/03/2003
+See www.astro.warwick.ac.uk/people/marsh/software for further info.
