@@ -10,8 +10,6 @@ AM_CONFIG_HEADER(config.h)
 
 AC_PROG_MAKE_SET
 
-PGPLOT_LIBS=`./pgplot_libs`
-
 dnl Checks for programs.
 AC_PROG_CXX
 AC_PROG_CC
