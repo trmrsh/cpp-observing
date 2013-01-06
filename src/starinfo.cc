@@ -125,6 +125,8 @@ int main(int argc, char *argv[]){
     Subs::Altaz a;
     std::string str;
     double off, ha, pa;
+    Subs::Position Sun;
+    Subs::Altaz saltaz;
     while(c != 'q' && c != 'Q'){
       if(present){
 	t.set();
@@ -132,7 +134,12 @@ int main(int argc, char *argv[]){
 	t = time;
       }
 
-      std::cout << "\n\n\n" << t << ", MJD = " << std::setprecision(10) << t.mjd() << "\n" << std::endl;
+      Sun.set_to_sun(t, telescope);
+      saltaz = Sun.altaz(t,telescope);
+
+      std::cout << "\n\n\n" << t << ", MJD = " << std::setprecision(10) << t.mjd() 
+		<< ", Sun's altitude = " << std::setprecision(4) << saltaz.alt_true << "\n" << std::endl;
+
       for(size_t j=0; j<star.size(); j++){
 	a   = star[j]->altaz(t,telescope);
 
@@ -174,9 +181,13 @@ int main(int argc, char *argv[]){
       }
       if(advance != 0.){
 
-	std::cout << "\nand in " << advance << " hours time:\n" << std::endl;
-
 	t.add_hour(advance);
+	Sun.set_to_sun(t, telescope);
+	saltaz = Sun.altaz(t,telescope);
+
+	std::cout << "\nand in " << advance << " hours time, Sun's altitude = " << saltaz.alt_true 
+		  << " and:\n" << std::endl;
+
 	for(size_t j=0; j<star.size(); j++){
 	  a   = star[j]->altaz(t,telescope);
 	  
