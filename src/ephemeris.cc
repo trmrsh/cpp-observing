@@ -2,39 +2,36 @@
 
 !!sphinx
 
-ephemeris prints times corresponding to phases
-==============================================
+*ephemeris* -- prints times corresponding to phases
+===================================================
 
-
-Invocation
-----------
-
-
-Arguments
----------
+Invocation:
+  ephemeris file start end telescope air sun phase
 
 
 
-  file
-    Data file of star positions and ephemerides}
+Arguments:
 
-  start
-    Date of first night, e.g. 1/5/2002 = 1st May 2002}
+  file :
+    Data file of star positions and ephemerides
 
-  end
-    Date of last night}
+  start :
+    Date of first night, e.g. 1/5/2002 = 1st May 2002
 
-  telescope
-    e.g. wht}
+  end :
+    Date of last night
 
-  air
-    Maximum airmass to bother with (>1)}
+  telescope :
+    e.g. wht
 
-  sun
-    Maximum altitude of sun (in degrees, e.g. -15)}
+  air :
+    Maximum airmass to bother with (>1)
 
-  phase
-    Phase to report}
+  sun :
+    Maximum altitude of sun (in degrees, e.g. -15)
+
+  phase :
+    Phase to report
 
 !!sphinx
 

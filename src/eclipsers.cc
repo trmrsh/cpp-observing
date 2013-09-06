@@ -2,57 +2,49 @@
 
 !!sphinx
 
-!!created 2001
-eclipsers plots critical orbital phases
-=======================================
+*eclipsers* -- plots critical orbital phases
+============================================
 
+*eclipsers* give a graphical representation of binary phases. It works with
+a variety of input ephemerides.
 
-**eclipsers** give a graphical representation of binary phases. It works with a variety of input ephemerides.
+Invocation:
 
-Invocation
-----------
+ eclipsers device file date telescope npoint airmass pstart1 pend1 pstart2 pend2
 
+Arguments:
 
-eclipsers device file date telescope npoint airmass pstart1 pend1 pstart2 pend2
+  device :
+    Plot device
 
-Arguments
----------
+  file :
+    Data file of star positions and ephemerides
 
+  date :
+    Date of night, e.g. 1/5/2002 = 1st May 2002
 
+  telescope :
+    e.g. wht
 
-  device
-    Plot device}
+  npoint :
+    Number of points to plot across night
 
-  file
-    Data file of star positions and ephemerides}
+  airmass :
+    Maximum airmass to allow
 
-  date
-    Date of night, e.g. 1/5/2002 = 1st May 2002}
-
-  telescope
-    e.g. wht}
-
-  npoint
-    Number of points to plot across night}
-
-  airmass
-    Maximum airmass to allow}
-
-  pstart1
+  pstart1 :
     Start of first phase range to indicate. Will be plotted as thick green
-lines.}
+    lines.
 
-  pend1
-    End of first phase range to indicate}
+  pend1 :
+    End of first phase range to indicate
 
-  pstart2
+  pstart2 :
     Start of second phase range to indicate. Will be plotted as medium-thick
-red lines.}
+    red lines.
 
-  pend2
-    End of second phase range to indicate. Put less than pstart2 to ignore.}
-
-
+  pend2 :
+    End of second phase range to indicate. Put less than pstart2 to ignore.
 
 !!sphinx
 

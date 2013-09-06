@@ -8,16 +8,16 @@ Welcome to subs's documentation!
 
 **observing** provides a set of routines of use for observing.
 
-Contents:
+Commands available:
 
 .. toctree::
    :maxdepth: 1
 
-   airmass
-   eclipsers
-   ephemeris
-   starinfo
-   whatphases
+   _store/airmass_cc
+   _store/eclipsers_cc
+   _store/ephemeris_cc
+   _store/starinfo_cc
+   _store/whatphases_cc
 
 Indices and tables
 ==================

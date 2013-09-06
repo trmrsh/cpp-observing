@@ -2,24 +2,19 @@
 
 !!sphinx
 
-whatphases plots which phases have been observed
-================================================
+*whatphases* -- plots which phases have been observed
+=====================================================
 
+*whatphases* expects a file called <star>.times for each star that has been
+observed.
 
-Expects a file called <star>.times for each star that has been observed. 
-Invocation
-----------
+Invocation:
+  whatphases stars [device]
 
+Arguments:
 
-whatphases stars [device]
-
-Arguments
----------
-
-
-
-  stars
-    Data file of star positions and ephemerides}
+  stars :
+    Data file of star positions and ephemerides
 
 !!sphinx
 

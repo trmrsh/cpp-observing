@@ -2,35 +2,32 @@
 
 !!sphinx
 
-!!created 27 July 2001
-starinfo real time information on airmasses etc
-===============================================
+*starinfo* -- real time information on airmasses etc
+====================================================
 
+*starinfo* prints out useful information on a star in real time
+and,optionally, somewhat ahead of real time. This allows one to judge when to
+change objects to catch particular phases etc. For each target it prints the
+hour angle, airmass and the position angle for a vertical slit. For targets
+with ephemerides, it also prints the orbital phase and uncertainty.
 
-**starinfo** prints out useful information on a star in real time and,optionally, somewhat ahead of real time. This allows one to judge when to change objects
-to catch particular phases etc. For each target it prints the hour angle, airmass and 
-the position angle for a vertical slit. For targets with ephemerides, it also prints
-the orbital phase and uncertainty.
+Arguments:
 
-Arguments
----------
+  stars :
+    Data file on stars of interest
 
+  telesope :
+    Telescope name. A wrong entry will produce listing
 
-  stars
-    Data file on stars of interest}
+  advance :
+    Number of hours to look ahead. advance = 0 will mean only one time is computed.
 
-  telesope
-    Telescope name. A wrong entry will produce listing}
+  present :
+    Use present time (from computer) or not
 
-  advance
-    Number of hours to look ahead. advance = 0 will mean only one time is computed.}
-
-  present
-    Use present time (from computer) or not}
-
-  time
+  time :
     If present = false, then this is the time that will be used. String of the form:
-"11 May 2032, 15:03:34.22" (exactly so, including the quotes).}
+    "11 May 2032, 15:03:34.22" (exactly so, including the quotes).
 
 !!sphinx
 
