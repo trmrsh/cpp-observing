@@ -1,28 +1,27 @@
 /*
 
-!!begin
-!!title Plots which phases have been observed for a set of stars
-!!author T.R. Marsh
-!!revised 02 Jan 2008
-!!root  whatphases
-!!descr plots which phases have been observed
-!!index whatphases
-!!class Programs
-!!css   style.css
-!!head1 whatphases -- plots which phases have been observed
+!!sphinx
+
+whatphases plots which phases have been observed
+================================================
+
 
 Expects a file called <star>.times for each star that has been observed. 
-!!head2 Invocation
+Invocation
+----------
+
 
 whatphases stars [device]
 
-!!head2 Arguments
+Arguments
+---------
 
-!!table
-!!arg{stars}{Data file of star positions and ephemerides}
-!!table
 
-!!end
+
+  stars
+    Data file of star positions and ephemerides}
+
+!!sphinx
 
 */
 

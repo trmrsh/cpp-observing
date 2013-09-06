@@ -1,34 +1,38 @@
 /*
 
-!!begin
-!!title  Starinfo
-!!author T.R. Marsh
-!!created 27 July 2001
-!!revised 02 Jan 2008
-!!root  starinfo
-!!descr real time information on airmasses etc
-!!index starinfo
-!!class Programs
-!!css   style.css
-!!head1 starinfo for real time airmass etc information.
+!!sphinx
 
-!!emph{starinfo} prints out useful information on a star in real time and,
-optionally, somewhat ahead of real time. This allows one to judge when to change objects
+!!created 27 July 2001
+starinfo real time information on airmasses etc
+===============================================
+
+
+**starinfo** prints out useful information on a star in real time and,optionally, somewhat ahead of real time. This allows one to judge when to change objects
 to catch particular phases etc. For each target it prints the hour angle, airmass and 
 the position angle for a vertical slit. For targets with ephemerides, it also prints
 the orbital phase and uncertainty.
 
-!!head2 Arguments
-!!table
-!!arg{stars}{Data file on stars of interest}
-!!arg{telesope}{Telescope name. A wrong entry will produce listing}
-!!arg{advance}{Number of hours to look ahead. advance = 0 will mean only one time is computed.}
-!!arg{present}{Use present time (from computer) or not}
-!!arg{time}{If present = false, then this is the time that will be used. String of the form:
-"11 May 2032, 15:03:34.22" (exactly so, including the quotes).}
-!!table
+Arguments
+---------
 
-!!end
+
+  stars
+    Data file on stars of interest}
+
+  telesope
+    Telescope name. A wrong entry will produce listing}
+
+  advance
+    Number of hours to look ahead. advance = 0 will mean only one time is computed.}
+
+  present
+    Use present time (from computer) or not}
+
+  time
+    If present = false, then this is the time that will be used. String of the form:
+"11 May 2032, 15:03:34.22" (exactly so, including the quotes).}
+
+!!sphinx
 
 */
 

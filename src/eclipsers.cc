@@ -1,44 +1,60 @@
 /*
 
-!!begin
-!!title Eclipse plotter
-!!author T.R. Marsh
+!!sphinx
+
 !!created 2001
-!!revised 02 Jan 2008
-!!root  eclipsers
-!!descr plots critical orbital phases
-!!index eclipsers
-!!class Programs
-!!css   style.css
-!!head1 eclipsers -- to plot critical phases
+eclipsers plots critical orbital phases
+=======================================
 
-!!emph{eclipsers} give a graphical representation of binary phases. 
-It works with a variety of input ephemerides.
 
-!!head2 Invocation
+**eclipsers** give a graphical representation of binary phases. It works with a variety of input ephemerides.
+
+Invocation
+----------
+
 
 eclipsers device file date telescope npoint airmass pstart1 pend1 pstart2 pend2
 
-!!head2 Arguments
+Arguments
+---------
 
-!!table
-!!arg{device}{Plot device}
-!!arg{file}{Data file of star positions and ephemerides}
-!!arg{date}{Date of night, e.g. 1/5/2002 = 1st May 2002}
-!!arg{telescope}{e.g. wht}
-!!arg{npoint}{Number of points to plot across night}
-!!arg{airmass}{Maximum airmass to allow}
-!!arg{pstart1}{Start of first phase range to indicate. Will be plotted as thick green
+
+
+  device
+    Plot device}
+
+  file
+    Data file of star positions and ephemerides}
+
+  date
+    Date of night, e.g. 1/5/2002 = 1st May 2002}
+
+  telescope
+    e.g. wht}
+
+  npoint
+    Number of points to plot across night}
+
+  airmass
+    Maximum airmass to allow}
+
+  pstart1
+    Start of first phase range to indicate. Will be plotted as thick green
 lines.}
-!!arg{pend1}{End of first phase range to indicate}
-!!arg{pstart2}{Start of second phase range to indicate. Will be plotted as medium-thick
+
+  pend1
+    End of first phase range to indicate}
+
+  pstart2
+    Start of second phase range to indicate. Will be plotted as medium-thick
 red lines.}
-!!arg{pend2}{End of second phase range to indicate. Put less than pstart2 to ignore.}
+
+  pend2
+    End of second phase range to indicate. Put less than pstart2 to ignore.}
 
 
-!!table
 
-!!end
+!!sphinx
 
 */
 

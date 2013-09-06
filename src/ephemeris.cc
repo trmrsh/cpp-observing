@@ -1,31 +1,42 @@
 /*
 
-!!begin
-!!title Ephemeris calculations
-!!author T.R. Marsh
-!!revised 02 Jan 2008
-!!root  ephemeris
-!!descr prints times corresponding to phases
-!!index ephemeris
-!!class Programs
-!!css   style.css
-!!head1 ephemeris -- prints times corresponding to phases
+!!sphinx
 
-!!head2 Invocation
+ephemeris prints times corresponding to phases
+==============================================
 
-!!head2 Arguments
 
-!!table
-!!arg{file}{Data file of star positions and ephemerides}
-!!arg{start}{Date of first night, e.g. 1/5/2002 = 1st May 2002}
-!!arg{end}{Date of last night}
-!!arg{telescope}{e.g. wht}
-!!arg{air}{Maximum airmass to bother with (>1)}
-!!arg{sun}{Maximum altitude of sun (in degrees, e.g. -15)}
-!!arg{phase}{Phase to report}
-!!table
+Invocation
+----------
 
-!!end
+
+Arguments
+---------
+
+
+
+  file
+    Data file of star positions and ephemerides}
+
+  start
+    Date of first night, e.g. 1/5/2002 = 1st May 2002}
+
+  end
+    Date of last night}
+
+  telescope
+    e.g. wht}
+
+  air
+    Maximum airmass to bother with (>1)}
+
+  sun
+    Maximum altitude of sun (in degrees, e.g. -15)}
+
+  phase
+    Phase to report}
+
+!!sphinx
 
 */
 

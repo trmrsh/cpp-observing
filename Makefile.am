@@ -2,14 +2,11 @@
 
 ACLOCAL_AMFLAGS = -I m4
 
-SUBDIRS = src include doc
+SUBDIRS = src include
 
 export: dist
 	scp $(PACKAGE)-$(VERSION).tar.gz $(WEB_SERVE):$(WEB_PATH)/software/.
-	ssh $(WEB_SERVE) "cd $(WEB_PATH)/software ; \rm -f $(PACKAGE).tar.gz ; ln -s $(PACKAGE)-$(VERSION).tar.gz $(PACKAGE).tar.gz; \rm -fr $(PACKAGE); mkdir $(PACKAGE)"
-	scp -r doc/html $(WEB_SERVE):$(WEB_PATH)/software/$(PACKAGE)/.
-	ssh $(WEB_SERVE) "cd $(WEB_PATH)/software; sed -e 's%<\!-- observing version --><td>.*</td>%<\!-- observing version --><td>$(VERSION)</td>%' index.html > junk.html; mv junk.html index.html"
-	ssh $(WEB_SERVE) "cd $(WEB_PATH)/software; sed -e 's%<\!-- observing date --><td>.*</td>%<\!-- observing date --><td>$(DATE)</td>%' index.html > junk.html; mv junk.html index.html"
+	ssh $(WEB_SERVE) "cd $(WEB_PATH)/software ; ln -sf $(PACKAGE)-$(VERSION).tar.gz $(PACKAGE).tar.gz"
 
 ## File of aliases
 
@@ -44,3 +41,6 @@ $(ALIASES):
 	@echo 'echo " "' >> $(ALIASES)
 	@echo 'echo "See ${prefix}/html/$(PACKAGE)/index.html for help."' >> $(ALIASES)
 	@echo 'echo " "' >> $(ALIASES)
+
+clean-local:
+	-rm -f $(ALIASES)

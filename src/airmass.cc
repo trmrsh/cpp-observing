@@ -1,53 +1,72 @@
 /*
 
-!!begin
-!!title Airmass plotter
-!!author T.R. Marsh
-!!revised: 25 Jan 2008
-!!root  airmass
-!!descr plots airmasses versus time.
-!!index airmass
-!!class Programs
-!!css   style.css
-!!head1 airmass -- to plot airmasses
+!!sphinx
 
-!!emph{airmass} plots the airmass versus time for a group of stars.
-Note that the format of the input coordinate/ephemeris files has changed as I
+airmass plots airmasses versus time.
+====================================
+
+
+**airmass** plots the airmass versus time for a group of stars.Note that the format of the input coordinate/ephemeris files has changed as I
 have switched to ICRS coordinates and so no equinix should be specified.
 
-!!head2 Invocation
+Invocation
+----------
+
 
 airmass file date telescope device
 
-!!head2 Arguments
+Arguments
+---------
 
-!!table
-!!arg{file}{Data file of star position and ephemeris (if applicable)
+
+
+  file
+    Data file of star position and ephemeris (if applicable)
 information. See below for format.}
-!!arg{date}{Observing date. Calculated as the date on which the
-sunset occurs}
-!!arg{telescope}{Telescope to use. e.g. WHT. Entering a wrong name
-will abort the program and dump a list of possibilities.}
-!!arg{device}{Plot device}
-!!table
 
-!!head2 Input file format
+  date
+    Observing date. Calculated as the date on which the
+sunset occurs}
+
+  telescope
+    Telescope to use. e.g. WHT. Entering a wrong name
+will abort the program and dump a list of possibilities.}
+
+  device
+    Plot device}
+
+Input file format
+-----------------
+
 
 The star data should be entered as follows:
 
-# is the comment flag !!break
-!!break
-DQ Her !!break        
-18 07 30.2 +45 51 32.!!break
-HMJD linear 34954.44429  0.00001 0.1936208964 0.0000000001!!break
-!!break
-WD 0101+048!!break
-01 03 48.8 +05 04 18.!!break
-null!!break
-!!break
-WD 1115+166!!break
-11 17 55.4 +16 21 29.!!break
-null!!break
+# is the comment flag 
+
+
+
+DQ Her 
+        
+18 07 30.2 +45 51 32.
+
+HMJD linear 34954.44429  0.00001 0.1936208964 0.0000000001
+
+
+
+WD 0101+048
+
+01 03 48.8 +05 04 18.
+
+null
+
+
+
+WD 1115+166
+
+11 17 55.4 +16 21 29.
+
+null
+
 
 The 'null' just indicates that a star has no ephemeris info.  The HMJD above says that the
 timescale is heliocentrically-corrected UTC, expressed as an MJD. Other choices are
@@ -56,7 +75,7 @@ HJD (heliocentric UTC as a JD), and BJD and BMJD which are the barycentric equiv
 number of terms of the ephemeris. The alternative is quadratic in which case a third coefficient
 plus an uncertainty would be needed.
 
-!!end
+!!sphinx
 
 */
 
