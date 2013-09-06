@@ -3,12 +3,12 @@
 // after time = start. If Sun does not do so within
 // a day it returns with an error
 
-#include "trm_subs.h"
-#include "trm_date.h"
-#include "trm_time.h"
-#include "trm_position.h"
-#include "trm_telescope.h"
-#include "trm_observing.h"
+#include "trm/subs.h"
+#include "trm/date.h"
+#include "trm/time.h"
+#include "trm/position.h"
+#include "trm/telescope.h"
+#include "trm/observing.h"
 
 bool Observing::suntime(const Subs::Telescope& tel, const Subs::Time& start, double altaim, 
 			Subs::Time& found){

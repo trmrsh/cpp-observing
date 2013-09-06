@@ -1,10 +1,10 @@
 #ifndef TRM_OBSERVING
 #define TRM_OBSERVING
 
-#include "trm_subs.h"
-#include "trm_telescope.h"
-#include "trm_time.h"
-#include "trm_position.h"
+#include "trm/subs.h"
+#include "trm/telescope.h"
+#include "trm/time.h"
+#include "trm/position.h"
 
 //! Namespace of observing related routines
 

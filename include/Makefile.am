@@ -1,7 +1,7 @@
 ## Process this file with automake to generate Makefile.in
 ##
 
-include_HEADERS = trm_observing.h
+nobase_include_HEADERS = trm/observing.h
 
 
 

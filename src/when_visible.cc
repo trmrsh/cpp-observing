@@ -7,8 +7,8 @@ if
 
 */
 
-#include "trm_constants.h"
-#include "trm_observing.h"
+#include "trm/constants.h"
+#include "trm/observing.h"
 
 bool Observing::when_visible(const Subs::Position& obj, const Subs::Telescope& telescope, 
 			     const Subs::Time& tstart, const Subs::Time& tend, double airmass,

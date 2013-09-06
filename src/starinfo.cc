@@ -40,16 +40,16 @@ the orbital phase and uncertainty.
 #include <unistd.h>
 #include <vector>
 
-#include "trm_subs.h"
-#include "trm_constants.h"
-#include "trm_date.h"
-#include "trm_time.h"
-#include "trm_telescope.h"
-#include "trm_position.h"
-#include "trm_star.h"
-#include "trm_binary_star.h"
-#include "trm_input.h"
-#include "trm_observing.h"
+#include "trm/subs.h"
+#include "trm/constants.h"
+#include "trm/date.h"
+#include "trm/time.h"
+#include "trm/telescope.h"
+#include "trm/position.h"
+#include "trm/star.h"
+#include "trm/binary_star.h"
+#include "trm/input.h"
+#include "trm/observing.h"
 
 int main(int argc, char *argv[]){
 
