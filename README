@@ -4,4 +4,5 @@ observing.
 
 Installation order: subs --> observing
 
-See www.astro.warwick.ac.uk/people/marsh/software for further info.
+If installing for the first time, run ./bootstrap first then
+follow the usual configure procedure (see INSTALL)
