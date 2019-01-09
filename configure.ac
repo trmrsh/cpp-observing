@@ -22,21 +22,26 @@ dnl Make C++ the default
 AC_LANG_CPLUSPLUS
 AC_REQUIRE_CPP
 
-dnl Check my other software
+dnl headers
 
-AC_CHECK_HEADERS([trm/subs.h trm/position.h trm/constants.h trm/array1d.h],[],AC_MSG_ERROR([cannot find 'subs' headers]))
+AC_CHECK_HEADERS([trm/subs.h trm/position.h trm/constants.h trm/array1d.h],[],
+                 [AC_MSG_ERROR([cannot find 'subs' headers])])
 
-AC_CHECK_LIB([subs], [main], [], AC_MSG_ERROR([cannot find 'subs' library]))
+AC_CHECK_HEADERS([stdlib.h float.h math.h sstream string fstream iostream], [],                  [AC_MSG_ERROR(missing header; please fix)])
+
+AC_CHECK_HEADERS([slalib.h], [],
+                 [AC_MSG_ERROR(missing header; please fix)])
 
 dnl third-party software
 
-AC_CHECK_HEADERS([stdlib.h float.h math.h sstream string fstream iostream], [], AC_MSG_ERROR(missing header; please fix))
+AC_CHECK_LIB([pcrecpp], [main], [],
+             [AC_MSG_ERROR(cannot locate the pcrecpp library and / or header files)])
 
-AC_CHECK_HEADERS([slalib.h], [], AC_MSG_ERROR(missing header; please fix))
+AC_CHECK_LIB([csla], [main], [],
+             [AC_MSG_ERROR(cannot find the sla C library)])
 
-AC_CHECK_LIB([csla], [main], [], AC_MSG_ERROR(cannot find the sla C library))
-
-PKG_CHECK_MODULES([PCRECPP], [libpcrecpp], [], AC_MSG_ERROR(cannot locate the pcrecpp library and / or header files))
+AC_CHECK_LIB([subs], [main], [],
+             [AC_MSG_ERROR([cannot find 'subs' library])])
 
 dnl PGPLOT has its own macro 'cos its a pain
 TRM_LIB_PGPLOT

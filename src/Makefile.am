@@ -19,9 +19,9 @@ ephemeris_SOURCES  = ephemeris.cc
 starinfo_SOURCES   = starinfo.cc
 whatphases_SOURCES = whatphases.cc
  
-AM_CPPFLAGS = -I../include -I../. $(PCRECPP_FLAGS)
+AM_CPPFLAGS = -I../include -I../.
 
-LDADD    = libobserving.la $(PCRECPP_LIBS)
+LDADD    = libobserving.la
 
 ## Library
 
